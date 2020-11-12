@@ -256,6 +256,8 @@ body {
   background-color: #fafafa;
   border: 1px solid #e8e8e8;
   padding: 15px 25px;
+}
+.user-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -264,16 +266,63 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-right: auto;
 }
 .user-avatar {
   border-radius: 50%;
   margin-right: 17px;
+  object-fit: cover;
 }
 .user-name {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #595959;
+}
+.edit-title {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #595959;
+}
+.edit-profile {
+  margin-right: 10px;
+}
+.icon-edit {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+}
+.edit-container {
+  display: none;
+}
+.edit-container.visible {
+  display: block;
+}
+.edit-label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.edit-input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px 10px;
+}
+.edit-submit {
+  width: 100%;
+  background-color: #fa8c16;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 32px;
+  font-size: 12px;
+  margin-bottom: 15px;
 }
 .icon-exit {
   width: 20px;
